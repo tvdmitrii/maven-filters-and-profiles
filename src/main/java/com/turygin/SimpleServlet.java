@@ -18,7 +18,7 @@ import java.io.IOException;
 public class SimpleServlet extends HttpServlet {
 
     private static final Logger LOG = LogManager.getLogger(SimpleServlet.class);
-    private static final String ENVIRONMENT = "development";
+    private static final String ENVIRONMENT = Config.getProperties().getProperty("environment");
 
     public SimpleServlet() {}
 
